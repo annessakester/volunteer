@@ -1,9 +1,11 @@
-<html lang="en-US"><head>
-    <title>Invitation Page</title>
+<html lang="en-US">
+    <head>
+    <title>Volunteer Page</title>
 <style>
     body {
     font: 15px arial, sans-serif;
     color: #808080;
+
 }
 input[type=text],
 select ,input[type=password],radio{
@@ -121,7 +123,7 @@ footer {
     left: 0;
     padding: 1rem;
     background-color: #efefef;
-    text-align: center
+    text-align: center;
 }
 div.gallery {
     margin: 5px;
@@ -155,7 +157,9 @@ div.desc {
     <ul class="topnav">
         <li><a href="index.html">Home</a>
         </li>
-        <li><a href="invitation.html" class="active">Invitation</a>
+        <li><a href="invitation.html">Invitation</a>
+        </li>
+        <li><a href="volunteer.html" class="active">Volunteer</a>
         </li>
         <li><a href="gallery.html">Gallery</a>
         </li>
@@ -176,9 +180,9 @@ div.desc {
         <label for="hostName">Host name:</label>
         <input type="text" name="hostName" id="hostInput" placeholder="Host Name" required="">
         <label for="recipientNumber">Number of Recipients:</label>
-        <input type="'text" name="recipientNumber" id="recipientNumber" onkeypress="pressEnter(event)" placeholder="enter number" required=""><p>Press Enter to fill in volunteer names</p>
+        <input type="'text" name="recipientNumber" id="recipientNumber" onkeypress="pressEnter(event)" placeholder="Enter number" required=""><p>Press ENTER key to fill in volunteer names</p>
         <div id="container"></div>
-        <!--Tells the browser to call the inviteLetter function when the submit is clicked-->
+        <!--Tells the browser to call the inviteLetter function when enter is clicked-->
         <input type="button" id="submit" value="Submit" onclick="inviteLetter()">
     </form>
     </section>
@@ -242,8 +246,6 @@ function inviteLetter() {
     }
 }  
 </script>    
-    
+    </body>
     <footer>This events site is for IT-FP3215 tasks.</footer>
-
-</body>
 </html>
